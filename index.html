@@ -3,24 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Po-Han Chen is an Electrical Engineering Ph.D. student at Stanford University researching coarse-grained reconfigurable arrays, hardware accelerators, and energy-efficient computing."
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Po-Han Chen — Electrical Engineering Researcher" />
-    <meta
-      property="og:description"
-      content="Research in reconfigurable computing, hardware accelerators, and efficient computer architecture."
-    />
+    <meta name="description" content="Po-Han Chen researches CGRAs, hardware accelerators, and energy-efficient computing." />
+    <meta name="theme-color" content="#4f5f86" />
+    <meta property="og:title" content="Po-Han Chen | Hardware Research" />
+    <meta property="og:description" content="Research in reconfigurable computing, hardware accelerators, and efficient computer architecture." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://pohantw.github.io/" />
-    <meta property="og:image" content="https://pohantw.github.io/assets/images/po-han-chen.jpg" />
+    <meta property="og:image" content="https://pohantw.github.io/assets/images/profile/po-han-chen.jpg" />
     <meta name="twitter:card" content="summary" />
     <link rel="canonical" href="https://pohantw.github.io/" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Po-Han Chen — Electrical Engineering Researcher</title>
+    <link rel="stylesheet" href="assets/css/foundation.css" />
+    <link rel="stylesheet" href="assets/css/profile.css" />
+    <link rel="stylesheet" href="assets/css/experience.css" />
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>Po-Han Chen | Hardware Research</title>
 
     <script type="application/ld+json">
       {
@@ -28,21 +25,16 @@
         "@type": "Person",
         "name": "Po-Han Chen",
         "url": "https://pohantw.github.io/",
-        "image": "https://pohantw.github.io/assets/images/po-han-chen.jpg",
+        "image": "https://pohantw.github.io/assets/images/profile/po-han-chen.jpg",
         "email": "mailto:pohan@stanford.edu",
-        "affiliation": {
-          "@type": "CollegeOrUniversity",
-          "name": "Stanford University"
-        },
-        "alumniOf": {
-          "@type": "CollegeOrUniversity",
-          "name": "National Tsing Hua University"
-        },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Stanford University" },
+          { "@type": "CollegeOrUniversity", "name": "National Tsing Hua University" }
+        ],
         "sameAs": [
           "https://github.com/pohantw",
           "https://www.linkedin.com/in/po-han-chen",
-          "https://scholar.google.com/citations?user=gxRwq9sAAAAJ&hl=en",
-          "https://orcid.org/0000-0001-9760-9565"
+          "https://scholar.google.com/citations?user=gxRwq9sAAAAJ&hl=en"
         ]
       }
     </script>
@@ -51,490 +43,428 @@
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header class="site-header" data-site-header>
-      <div class="nav-shell">
-        <a class="site-mark" href="#profile" aria-label="Po-Han Chen, back to top">
-          <span class="site-mark__monogram" aria-hidden="true">PC</span>
-          <span class="site-mark__name">Po-Han Chen</span>
-        </a>
-
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="primary-navigation"
-          data-menu-toggle
-        >
-          <span class="menu-toggle__label">Menu</span>
-          <span class="menu-toggle__icon" aria-hidden="true">
-            <span></span>
-            <span></span>
-          </span>
+    <!-- Global navigation -->
+    <header class="masthead" data-site-header>
+      <div class="masthead__inner">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle>
+          <span>Menu</span>
+          <span class="navicon" aria-hidden="true"></span>
         </button>
 
-        <nav class="primary-navigation" id="primary-navigation" aria-label="Primary" data-navigation>
-          <a href="#profile">Photo &amp; Links</a>
-          <a href="#about">About</a>
-          <a href="#education">Education</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#chips">Chips Taped Out</a>
+        <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-navigation>
+          <a href="#experience">Education &amp; Experience</a>
+          <a href="#chips">Chips Gallery</a>
           <a href="#publications">Publications</a>
         </nav>
       </div>
     </header>
 
-    <main id="main-content">
-      <section class="profile-section page-shell" id="profile" aria-labelledby="profile-title">
-        <div class="portrait-column">
-          <div class="portrait-frame">
-            <img
-              src="assets/images/po-han-chen.jpg"
-              width="500"
-              height="500"
-              alt="Portrait of Po-Han Chen"
-              fetchpriority="high"
-            />
+    <!-- Primary page content -->
+    <div class="site-layout">
+      <main id="main-content" class="page-content">
+        <!-- Profile and introduction -->
+        <section class="page-section hero" id="about" aria-labelledby="about-title">
+          <div class="profile-about">
+            <div class="profile-card" aria-label="Profile and contact links">
+              <img class="profile-photo" src="assets/images/profile/po-han-chen.jpg" width="500" height="500" alt="Portrait of Po-Han Chen" fetchpriority="high" />
+
+              <ul class="profile-links">
+                <li class="profile-location">
+                  <svg class="profile-icon profile-icon--location" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z" /></svg>
+                  <span>Sunnyvale, California</span>
+                </li>
+                <li>
+                  <a href="mailto:pohan@stanford.edu"><svg class="profile-icon profile-icon--email" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z" /></svg><span>pohan [at] stanford [dot] edu</span></a>
+                </li>
+                <li>
+                  <a href="https://scholar.google.com/citations?user=gxRwq9sAAAAJ&amp;hl=en" target="_blank" rel="noreferrer"><svg class="profile-icon profile-icon--scholar" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-11 6 11 6 9-4.91V17h2V9L12 3Zm-6 9.18V17l6 3 6-3v-4.82l-6 3.27-6-3.27Z" /></svg><span>Google Scholar</span></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/po-han-chen" target="_blank" rel="noreferrer"><svg class="profile-icon profile-icon--linkedin" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5h-3V21h3V8.5ZM5 3A1.75 1.75 0 1 0 5 6.5 1.75 1.75 0 0 0 5 3Zm4 5.5h2.9v1.7h.04a3.18 3.18 0 0 1 2.86-1.96c3.06 0 4.7 2.01 4.7 5.64V21h-3v-6.27c0-1.5-.03-3.42-2.08-3.42-2.09 0-2.41 1.63-2.41 3.31V21H9V8.5Z" /></svg><span>LinkedIn</span></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="about-main">
+              <header class="section-heading">
+                <h1 id="about-title">Po-Han Chen</h1>
+              </header>
+              <div class="hero-copy">
+                <p>
+                  Hi, I’m Po-Han. I’m currently looking for roles in digital IC design, including architecture,
+                  verification, and physical design.
+                </p>
+                <p>
+                  I recently completed my Ph.D. in Electrical Engineering at Stanford University, advised by
+                  <a href="https://priyanka-raina.github.io/" target="_blank" rel="noreferrer">Professor Priyanka Raina</a>.
+                  My research focused on coarse-grained reconfigurable array (CGRA) architectures and
+                  high-performance, energy-efficient computing systems.
+                </p>
+                <p>
+                  Before Stanford, I completed my M.S. at National Tsing Hua University under
+                  <a href="https://www.ee.nthu.edu.tw/chaotsung/" target="_blank" rel="noreferrer">Professor Chao-Tsung Huang</a>,
+                  where I designed ASICs for digital refocusing. I then worked as a Design Engineer at MediaTek,
+                  developing hardware for image signal processing (ISP) pipelines.
+                </p>
+              </div>
+            </div>
           </div>
-          <p class="portrait-caption">Electrical Engineering<br />Stanford University</p>
-        </div>
+        </section>
 
-        <div class="profile-copy">
-          <p class="eyebrow">Hardware systems researcher</p>
-          <h1 id="profile-title">Po-Han Chen</h1>
-          <p class="profile-role">
-            Ph.D. student in Electrical Engineering at Stanford University, working on programmable
-            accelerators and efficient computing systems.
-          </p>
-
-          <ul class="profile-links" aria-label="Professional links">
-            <li>
-              <a href="mailto:pohan@stanford.edu">
-                <span class="profile-link__label">Email</span>
-                <span class="profile-link__value">pohan@stanford.edu</span>
-                <span aria-hidden="true">↗</span>
-              </a>
-            </li>
-            <li>
-              <span class="profile-link profile-link--placeholder" title="Add a CV PDF to enable this link">
-                <span class="profile-link__label">CV</span>
-                <span class="profile-link__value">PDF to be added</span>
-                <span aria-hidden="true">—</span>
+        <!-- Education and professional experience -->
+        <section class="page-section experience-section" id="experience" aria-labelledby="experience-title">
+          <header class="section-heading">
+            <h2 id="experience-title">Education &amp; Experience</h2>
+            <button class="career-toggle-all" type="button" role="switch" aria-checked="false" aria-label="Expand all education and experience cards">
+              <span class="career-toggle-all__label">Expand all</span>
+              <span class="career-toggle-all__track" aria-hidden="true">
+                <span class="career-toggle-all__thumb"></span>
               </span>
-            </li>
-            <li>
-              <a href="https://github.com/pohantw" target="_blank" rel="noreferrer">
-                <span class="profile-link__label">GitHub</span>
-                <span class="profile-link__value">@pohantw</span>
-                <span aria-hidden="true">↗</span>
-                <span class="sr-only">(opens in a new tab)</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://scholar.google.com/citations?user=gxRwq9sAAAAJ&amp;hl=en"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span class="profile-link__label">Scholar</span>
-                <span class="profile-link__value">Google Scholar</span>
-                <span aria-hidden="true">↗</span>
-                <span class="sr-only">(opens in a new tab)</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/po-han-chen" target="_blank" rel="noreferrer">
-                <span class="profile-link__label">LinkedIn</span>
-                <span class="profile-link__value">Po-Han Chen</span>
-                <span aria-hidden="true">↗</span>
-                <span class="sr-only">(opens in a new tab)</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://orcid.org/0000-0001-9760-9565" target="_blank" rel="noreferrer">
-                <span class="profile-link__label">ORCID</span>
-                <span class="profile-link__value">0000-0001-9760-9565</span>
-                <span aria-hidden="true">↗</span>
-                <span class="sr-only">(opens in a new tab)</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+            </button>
+          </header>
 
-      <section class="content-section page-shell" id="about" aria-labelledby="about-title">
-        <div class="section-heading">
-          <p class="section-index" aria-hidden="true">01</p>
-          <h2 id="about-title">About</h2>
-        </div>
-        <div class="prose measure">
-          <p>
-            I am an Electrical Engineering Ph.D. student at Stanford University, advised by
-            <a href="https://priyanka-raina.github.io/" target="_blank" rel="noreferrer">Professor Priyanka Raina</a>.
-            My research focuses on the architecture of coarse-grained reconfigurable arrays (CGRAs)
-            and on building high-performance, energy-efficient computing platforms.
-          </p>
-          <p>
-            Before Stanford, I worked as a digital circuit designer at MediaTek, developing hardware
-            architectures for image-processing pipelines. My earlier work also explored computational
-            photography, including realistic digital refocusing for multi-camera mobile devices.
-          </p>
-        </div>
-      </section>
+          <div class="career-chart" aria-label="Education and work experience from 2012 to the present">
+            <div class="career-plot">
+              <div class="career-row career-row--education">
+                <div class="career-track">
+                  <article class="career-card career-card--nthu">
+                    <div class="career-card__header">
+                      <div class="career-card__logo"><img src="assets/images/logos/nthu.webp" alt="National Tsing Hua University seal" /></div>
+                      <div class="career-card__heading">
+                        <h3 class="career-card__title">National Tsing Hua University</h3>
+                        <p class="career-card__subtitle">2012–2016 B.S. in EECS</p>
+                        <p class="career-card__subtitle">2016–2018 M.S. in EE</p>
+                      </div>
+                    </div>
+                    <details class="career-card__details">
+                      <summary aria-label="Toggle details"></summary>
+                      <div class="career-card__body">
+                        <p class="career-card__description">Thesis: <a class="career-card__resource-link" href="https://etds.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=uMNOzl/record?r1=34&amp;h1=1" target="_blank" rel="noreferrer">[Link]</a><cite>VLSI Architecture of Multi-View/Multi-Line View Synthesis Engine for High-Performance Block-Based Refocusing</cite></p>
+                        <p class="career-card__advisor">Advisor: Chao-Tsung Huang</p>
+                      </div>
+                    </details>
+                  </article>
+                  <article class="career-card career-card--phd">
+                    <div class="career-card__header">
+                      <div class="career-card__logo"><img src="assets/images/logos/stanford.png" alt="Stanford University logo" /></div>
+                      <div class="career-card__heading">
+                        <h3 class="career-card__title">Stanford University</h3>
+                        <p class="career-card__subtitle">2021–2026 Ph.D. in EE</p>
+                      </div>
+                    </div>
+                    <details class="career-card__details">
+                      <summary aria-label="Toggle details"></summary>
+                      <div class="career-card__body">
+                        <p class="career-card__description">Thesis: <a class="career-card__resource-link" href="https://purl.stanford.edu/zn004gx3279" target="_blank" rel="noreferrer">[Link]</a><cite>Designing CGRAs for Sparse ML Acceleration and Scalable Physical Implementation</cite></p>
+                        <p class="career-card__advisor">Advisor: Priyanka Raina</p>
+                      </div>
+                    </details>
+                  </article>
+                </div>
+              </div>
 
-      <section class="content-section page-shell" id="education" aria-labelledby="education-title">
-        <div class="section-heading">
-          <p class="section-index" aria-hidden="true">02</p>
-          <h2 id="education-title">Education</h2>
-        </div>
-        <div class="education-list">
-          <article class="education-item">
-            <p class="education-item__date">2021—Present</p>
-            <div>
-              <h3>Stanford University</h3>
-              <p>Ph.D. studies, Electrical Engineering</p>
-              <p class="detail">Advised by Professor Priyanka Raina</p>
-            </div>
-          </article>
-          <article class="education-item">
-            <p class="education-item__date">2018</p>
-            <div>
-              <h3>National Tsing Hua University</h3>
-              <p>M.S., Electrical Engineering</p>
-              <p class="detail">Hsinchu, Taiwan</p>
-            </div>
-          </article>
-          <article class="education-item">
-            <p class="education-item__date">2016</p>
-            <div>
-              <h3>National Tsing Hua University</h3>
-              <p>B.S., Electrical Engineering and Computer Science</p>
-              <p class="detail">Hsinchu, Taiwan</p>
-            </div>
-          </article>
-        </div>
-      </section>
+              <div class="career-row career-row--axis" aria-hidden="true">
+                <div class="career-axis">
+                  <b class="career-axis__segment career-axis__segment--bs"></b>
+                  <b class="career-axis__segment career-axis__segment--ms"></b>
+                  <b class="career-axis__segment career-axis__segment--mediatek"></b>
+                  <b class="career-axis__segment career-axis__segment--stanford"></b>
+                  <span style="--at: 0%">2012</span>
+                  <span class="career-axis__minor" style="--at: 7.143%" aria-label="2013"></span>
+                  <span class="career-axis__minor" style="--at: 14.286%" aria-label="2014"></span>
+                  <span class="career-axis__minor" style="--at: 21.429%" aria-label="2015"></span>
+                  <span style="--at: 28.571%">2016</span>
+                  <span class="career-axis__minor" style="--at: 35.714%" aria-label="2017"></span>
+                  <span style="--at: 42.857%">2018</span>
+                  <span class="career-axis__minor" style="--at: 50%" aria-label="2019"></span>
+                  <span style="--at: 57.143%">2020</span>
+                  <span style="--at: 64.286%">2021</span>
+                  <span class="career-axis__minor career-axis__apple-point" style="--at: 71.429%" aria-label="2022"></span>
+                  <span class="career-axis__minor" style="--at: 78.571%" aria-label="2023"></span>
+                  <span class="career-axis__minor" style="--at: 85.714%" aria-label="2024"></span>
+                  <span class="career-axis__minor" style="--at: 92.857%" aria-label="2025"></span>
+                  <span class="career-axis__now" style="--at: 100%">2026</span>
+                  <i class="career-axis__future" aria-label="Future"></i>
+                </div>
+              </div>
 
-      <section class="content-section page-shell" id="skills" aria-labelledby="skills-title">
-        <div class="section-heading">
-          <p class="section-index" aria-hidden="true">03</p>
-          <h2 id="skills-title">Skills</h2>
-        </div>
-        <div class="skill-groups">
-          <article class="skill-group">
-            <h3>Architecture</h3>
-            <ul class="tag-list">
-              <li>Hardware accelerators</li>
-              <li>CGRA architecture</li>
-              <li>System-on-chip design</li>
-              <li>Sparse tensor algebra</li>
-            </ul>
-          </article>
-          <article class="skill-group">
-            <h3>Digital design</h3>
-            <ul class="tag-list">
-              <li>Digital circuit design</li>
-              <li>Physical design flows</li>
-              <li>Image-processing pipelines</li>
-              <li>Hardware generation</li>
-            </ul>
-          </article>
-          <article class="skill-group">
-            <h3>Applications</h3>
-            <ul class="tag-list">
-              <li>Machine learning</li>
-              <li>Image processing</li>
-              <li>Computational photography</li>
-              <li>Energy-efficient computing</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section page-shell" id="experience" aria-labelledby="experience-title">
-        <div class="section-heading">
-          <p class="section-index" aria-hidden="true">04</p>
-          <h2 id="experience-title">Experience</h2>
-        </div>
-        <ol class="timeline" aria-label="Professional experience timeline">
-          <li class="timeline-item">
-            <p class="timeline-item__date">2021—Present</p>
-            <span class="timeline-item__marker" aria-hidden="true"></span>
-            <div class="timeline-item__content">
-              <p class="timeline-item__organization">Stanford University</p>
-              <h3>Ph.D. Researcher</h3>
-              <p>
-                Researching programmable accelerator architectures, CGRAs, and high-performance,
-                energy-efficient computing systems in the Stanford AHA group.
-              </p>
+              <div class="career-row career-row--work">
+                <div class="career-track">
+                  <article class="career-card career-card--mediatek">
+                    <div class="career-card__header">
+                      <div class="career-card__logo"><img src="assets/images/logos/mediatek.png" alt="MediaTek logo" /></div>
+                      <div class="career-card__heading">
+                        <div class="career-card__title-row">
+                          <h3 class="career-card__title">MediaTek</h3>
+                          <span class="career-card__tag">Full-Time</span>
+                        </div>
+                        <p class="career-card__subtitle">Design Engineer</p>
+                      </div>
+                    </div>
+                    <details class="career-card__details">
+                      <summary aria-label="Toggle details"></summary>
+                      <div class="career-card__body">
+                        <p class="career-card__description">Camera ISP Pipeline Design Team</p>
+                      </div>
+                    </details>
+                  </article>
+                  <article class="career-card career-card--apple">
+                    <div class="career-card__header">
+                      <div class="career-card__logo">
+                        <svg class="career-card__apple-mark" viewBox="0 11 14 18" role="img" aria-label="Apple logo">
+                          <path d="m13.0729 17.6825a3.61 3.61 0 0 0-1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1-1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1-1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0-.031-.32 3.5686 3.5686 0 0 0-2.3445 1.2084 3.4629 3.4629 0 0 0-.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z" />
+                        </svg>
+                      </div>
+                      <div class="career-card__heading">
+                        <div class="career-card__title-row">
+                          <h3 class="career-card__title">Apple</h3>
+                          <span class="career-card__tag">Intern</span>
+                        </div>
+                        <p class="career-card__subtitle">RTL Designer</p>
+                      </div>
+                    </div>
+                    <details class="career-card__details">
+                      <summary aria-label="Toggle details"></summary>
+                      <div class="career-card__body">
+                        <p class="career-card__description">SEG Pixel IP Design Team</p>
+                      </div>
+                    </details>
+                  </article>
+                </div>
+              </div>
             </div>
-          </li>
-          <li class="timeline-item">
-            <p class="timeline-item__date">Before Stanford</p>
-            <span class="timeline-item__marker" aria-hidden="true"></span>
-            <div class="timeline-item__content">
-              <p class="timeline-item__organization">MediaTek</p>
-              <h3>Digital Circuit Designer</h3>
-              <p>
-                Developed hardware architectures for image-processing pipelines and worked on
-                computational-photography systems.
-              </p>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="content-section page-shell" id="chips" aria-labelledby="chips-title">
-        <div class="section-heading section-heading--with-copy">
-          <div>
-            <p class="section-index" aria-hidden="true">05</p>
-            <h2 id="chips-title">Chips Taped Out</h2>
           </div>
-          <p>
-            Selected silicon projects I have contributed to, spanning open-source and advanced
-            process technologies.
-          </p>
-        </div>
+        </section>
 
-        <div class="chip-grid">
-          <article class="chip-card">
-            <figure class="chip-card__figure chip-card__figure--contained">
-              <img
-                src="assets/images/opal.png"
-                width="431"
-                height="447"
-                loading="lazy"
-                alt="Annotated Opal chip layout with CPU and SRAMs, global buffer, and 28 by 16 CGRA"
-              />
-              <figcaption>
-                Die view from the Stanford AHA project
-              </figcaption>
-            </figure>
-            <div class="chip-card__body">
-              <div class="chip-card__title-row">
-                <h3>Opal</h3>
-                <p class="chip-card__year">Dec. 2023</p>
-              </div>
-              <p class="chip-card__node">Intel 16 nm · 28 × 16 CGRA</p>
-              <p>
-                A CGRA SoC designed to accelerate full sparse machine-learning applications, with
-                support for high-throughput sparse primitives and Gustavson-style dataflow.
-              </p>
-              <div class="button-row">
-                <a class="text-button" href="https://doi.org/10.1109/LSSC.2025.3613245" target="_blank" rel="noreferrer">Publication <span aria-hidden="true">↗</span></a>
-                <a class="text-button" href="https://aha.stanford.edu/" target="_blank" rel="noreferrer">Project <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-          </article>
+        <!-- Fabricated chips -->
+        <section class="page-section" id="chips" aria-labelledby="chips-title">
+          <header class="section-heading">
+            <h2 id="chips-title">Chips Gallery</h2>
+          </header>
 
-          <article class="chip-card">
-            <figure class="chip-card__figure chip-card__figure--contained">
-              <img
-                src="assets/images/onyx.png"
-                width="400"
-                height="446"
-                loading="lazy"
-                alt="Annotated Onyx chip layout with ARM M3 CPU, global buffer, and 32 by 16 CGRA"
-              />
-              <figcaption>
-                Die view from the Stanford AHA project
-              </figcaption>
-            </figure>
-            <div class="chip-card__body">
-              <div class="chip-card__title-row">
-                <h3>Onyx</h3>
-                <p class="chip-card__year">2022</p>
-              </div>
-              <p class="chip-card__node">GlobalFoundries 12 nm · 32 × 16 CGRA</p>
-              <p>
-                A programmable accelerator for dense and sparse workloads, adding higher compute
-                density, energy-efficient memories, and native sparse tensor-algebra support.
-              </p>
-              <div class="button-row">
-                <a class="text-button" href="https://doi.org/10.1109/JSSC.2025.3604724" target="_blank" rel="noreferrer">Publication <span aria-hidden="true">↗</span></a>
-                <a class="text-button" href="https://github.com/StanfordAHA/garnet" target="_blank" rel="noreferrer">Code <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-          </article>
+          <div class="chip-gallery">
+            <article class="chip-card">
+              <figure class="chip-card__image">
+                <img src="assets/images/chips/zircon.png" width="1387" height="1447" loading="lazy" alt="Die photo of the Zircon chip" />
+              </figure>
+              <table class="chip-details" aria-label="Zircon chip details">
+                <tbody>
+                  <tr><th scope="row">Chip Name</th><td><strong>Zircon</strong></td></tr>
+                  <tr><th scope="row">Technology</th><td>Intel 16 nm</td></tr>
+                  <tr><th scope="row">Size</th><td>4.085 mm × 3.925 mm</td></tr>
+                  <tr><th scope="row">Voltage / Frequency</th><td>0.84–1.20 V / 200 MHz</td></tr>
+                  <tr><th scope="row">Function</th><td>Heterogeneous CGRA SoC that pairs a GEMM-optimized array with a flexible array for sparse and nonlinear operations.</td></tr>
+                  <tr>
+                    <th scope="row">My Roles in This Work</th>
+                    <td><div class="chip-role-list"><span class="chip-role-tag chip-role-tag--integration">SoC Integration</span><span class="chip-role-tag chip-role-tag--physical">Physical Design</span></div></td>
+                  </tr>
+                  <tr><th scope="row">Publication</th><td>ESSCIRC 2026</td></tr>
+                </tbody>
+              </table>
+            </article>
 
-          <article class="chip-card">
-            <figure class="chip-card__figure chip-card__figure--contained">
-              <img
-                src="assets/images/toy-cgra.png"
-                width="500"
-                height="597"
-                loading="lazy"
-                alt="Physical layout of the open-source Toy-CGRA chip"
-              />
-              <figcaption>
-                Layout from the EE272B Toy-CGRA project
-              </figcaption>
-            </figure>
-            <div class="chip-card__body">
-              <div class="chip-card__title-row">
-                <h3>Toy-CGRA</h3>
-                <p class="chip-card__year">June 2021</p>
-              </div>
-              <p class="chip-card__node">SkyWater 130 nm · 4 × 8 CGRA</p>
-              <p>
-                An open-source CGRA for machine-learning and image-processing applications written
-                in Halide. The taped-out design runs at 66 MHz and occupies 3.5 × 2.9 mm.
-              </p>
-              <div class="button-row">
-                <a class="text-button" href="https://doi.org/10.1109/ISCAS46773.2023.10182052" target="_blank" rel="noreferrer">Publication <span aria-hidden="true">↗</span></a>
-                <a class="text-button" href="https://github.com/pohantw/ee272b_CGRA" target="_blank" rel="noreferrer">Code <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-          </article>
+            <article class="chip-card">
+              <figure class="chip-card__image">
+                <img src="assets/images/chips/opal.png" width="1249" height="1312" loading="lazy" alt="Die photo of the Opal chip" />
+              </figure>
+              <table class="chip-details" aria-label="Opal chip details">
+                <tbody>
+                  <tr><th scope="row">Chip Name</th><td><strong>Opal</strong></td></tr>
+                  <tr><th scope="row">Technology</th><td>Intel 16 nm</td></tr>
+                  <tr><th scope="row">Size</th><td>4.085 mm × 3.925 mm</td></tr>
+                  <tr><th scope="row">Voltage / Frequency</th><td>0.85 V / 750 MHz</td></tr>
+                  <tr><th scope="row">Function</th><td>CGRA SoC optimized for high-performance, end-to-end sparse machine-learning workloads.</td></tr>
+                  <tr>
+                    <th scope="row">My Roles in This Work</th>
+                    <td><div class="chip-role-list"><span class="chip-role-tag chip-role-tag--architecture">Architecture</span><span class="chip-role-tag chip-role-tag--integration">SoC Integration</span><span class="chip-role-tag chip-role-tag--physical">Physical Design</span><span class="chip-role-tag chip-role-tag--measurement">Post-Silicon Characterization</span></div></td>
+                  </tr>
+                  <tr><th scope="row">Publication</th><td>CICC 2025 <a class="chip-publication-link" href="https://doi.org/10.1109/CICC63670.2025.10983811" target="_blank" rel="noreferrer">[Link]</a>, SSC-L 2025 <a class="chip-publication-link" href="https://doi.org/10.1109/LSSC.2025.3613245" target="_blank" rel="noreferrer">[Link]</a></td></tr>
+                </tbody>
+              </table>
+            </article>
 
-        </div>
-      </section>
+            <article class="chip-card">
+              <figure class="chip-card__image">
+                <img src="assets/images/chips/open-source-cgra.jpg" width="957" height="1143" loading="lazy" alt="Die photo of the Open-Source 4x8 CGRA chip" />
+              </figure>
+              <table class="chip-details" aria-label="Open-Source 4x8 CGRA chip details">
+                <tbody>
+                  <tr><th scope="row">Chip Name</th><td><strong>Open-Source 4x8 CGRA</strong></td></tr>
+                  <tr><th scope="row">Technology</th><td>SkyWater 130 nm</td></tr>
+                  <tr><th scope="row">Size</th><td>3.5 mm × 2.9 mm</td></tr>
+                  <tr><th scope="row">Voltage / Frequency</th><td>1.8 V / 66 MHz</td></tr>
+                  <tr><th scope="row">Function</th><td>CGRA implemented with open-source EDA tools, demonstrating the technology portability of our CGRA design flow.</td></tr>
+                  <tr>
+                    <th scope="row">My Roles in This Work</th>
+                    <td><div class="chip-role-list"><span class="chip-role-tag chip-role-tag--architecture">Architecture</span><span class="chip-role-tag chip-role-tag--rtl">RTL Design</span><span class="chip-role-tag chip-role-tag--verification">Verification</span><span class="chip-role-tag chip-role-tag--integration">SoC Integration</span><span class="chip-role-tag chip-role-tag--physical">Physical Design</span><span class="chip-role-tag chip-role-tag--measurement">Post-Silicon Characterization</span></div></td>
+                  </tr>
+                  <tr><th scope="row">Publication</th><td>ISCAS 2023 <a class="chip-publication-link" href="https://doi.org/10.1109/ISCAS46773.2023.10182052" target="_blank" rel="noreferrer">[Link]</a></td></tr>
+                </tbody>
+              </table>
+            </article>
 
-      <section class="content-section page-shell" id="publications" aria-labelledby="publications-title">
-        <div class="section-heading section-heading--with-copy">
-          <div>
-            <p class="section-index" aria-hidden="true">06</p>
+            <article class="chip-card">
+              <figure class="chip-card__image">
+                <img src="assets/images/chips/refocus.png" width="680" height="680" loading="lazy" alt="Die photo of the Refocus ASIC" />
+              </figure>
+              <table class="chip-details" aria-label="Refocus ASIC details">
+                <tbody>
+                  <tr><th scope="row">Chip Name</th><td><strong>Refocus ASIC</strong></td></tr>
+                  <tr><th scope="row">Technology</th><td>TSMC 40 nm</td></tr>
+                  <tr><th scope="row">Size</th><td>2.5 mm × 2.5 mm</td></tr>
+                  <tr><th scope="row">Voltage / Frequency</th><td>0.9 V / 200 MHz</td></tr>
+                  <tr><th scope="row">Function</th><td>ASIC accelerator implementing a view-synthesis algorithm for block-based digital refocusing.</td></tr>
+                  <tr>
+                    <th scope="row">My Roles in This Work</th>
+                    <td><div class="chip-role-list"><span class="chip-role-tag chip-role-tag--architecture">Architecture</span><span class="chip-role-tag chip-role-tag--rtl">RTL Design</span><span class="chip-role-tag chip-role-tag--verification">Verification</span><span class="chip-role-tag chip-role-tag--measurement">Post-Silicon Characterization</span></div></td>
+                  </tr>
+                  <tr><th scope="row">Publication</th><td>VLSI Symposium 2019 <a class="chip-publication-link" href="https://doi.org/10.23919/VLSIT.2019.8776561" target="_blank" rel="noreferrer">[Link]</a>, OJ-SSCS 2023 <a class="chip-publication-link" href="https://doi.org/10.1109/OJSSCS.2023.3244759" target="_blank" rel="noreferrer">[Link]</a></td></tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+        </section>
+
+        <!-- Papers, newest first -->
+        <section class="page-section publications-section" id="publications" aria-labelledby="publications-title">
+          <header class="section-heading">
             <h2 id="publications-title">Publications</h2>
-          </div>
-          <p>
-            Selected journal and conference publications. See
-            <a href="https://scholar.google.com/citations?user=gxRwq9sAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
-            for citation data.
-          </p>
-        </div>
+          </header>
 
-        <ol class="publication-list">
-          <li class="publication">
-            <p class="publication__year">2025</p>
-            <article>
+          <ol class="publication-list">
+            <li class="publication-year"><h3>Coming Soon</h3></li>
+
+            <li class="publication">
+              <h3>SPEC: A Scalable and Physical-Design-Friendly Architecture for CGRAs <span class="publication-status publication-status--review">[Under Review]</span></h3>
+              <p class="publication-authors"><strong class="author-self">P.-H. Chen</strong>, A. Carsello, M. Horowitz, and P. Raina</p>
+              <p class="publication-venue"><cite>IEEE Open Journal of the Solid-State Circuits Society (OJ-SSCS)</cite>.</p>
+            </li>
+
+            <li class="publication">
+              <h3>Zircon: A 16nm Heterogeneous CGRA SoC for Accelerating Dense and Sparse ML <span class="publication-status publication-status--accepted">[Accepted, to be published]</span></h3>
+              <p class="publication-authors">Y. Mei, M. Oduoza, <strong class="author-self">P.-H. Chen</strong>, M. Strange, Z. Xie, B. W. Cheng, K. Koul, K. Prabhu, J. Yu, S. G. Ravipati, M. Horowitz, and P. Raina</p>
+              <p class="publication-venue"><cite>IEEE European Solid-State Circuits Conference (ESSCIRC)</cite>, September 2026.</p>
+            </li>
+
+            <li class="publication-year"><h3>2025</h3></li>
+
+            <li class="publication">
               <h3>Opal: A 16-nm Coarse-Grained Reconfigurable Array SoC for Full Sparse Machine Learning Applications</h3>
-              <p class="publication__authors"><strong>Po-Han Chen</strong>, Bo Wun Cheng, Michael Oduoza, Zhouhua Xie, Rupert Lu, Sai Gautham Ravipati, Kalhan Koul, Alex Carsello, Yuchen Mei, Mark Horowitz, and Priyanka Raina</p>
-              <p class="publication__venue"><cite>IEEE Solid-State Circuits Letters</cite>, vol. 8, pp. 293–296, 2025</p>
-              <div class="button-row">
-                <a class="text-button" href="https://doi.org/10.1109/LSSC.2025.3613245" target="_blank" rel="noreferrer">DOI <span aria-hidden="true">↗</span></a>
-                <a class="text-button" href="https://aha.stanford.edu/" target="_blank" rel="noreferrer">Project <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-          </li>
+              <p class="publication-authors"><strong class="author-self">Po-Han Chen</strong>, Bo Wun Cheng, Michael Oduoza, Zhouhua Xie, Rupert Lu, Sai Gautham Ravipati, Kalhan Koul, Alex Carsello, Yuchen Mei, Mark Horowitz, and Priyanka Raina</p>
+              <p class="publication-venue"><cite>IEEE Solid-State Circuits Letters (SSC-L)</cite>, September 2025. <a class="publication-paper-link" href="https://doi.org/10.1109/LSSC.2025.3613245" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
 
-          <li class="publication">
-            <p class="publication__year">2025</p>
-            <article>
+            <li class="publication">
               <h3>Onyx: A 12-nm Programmable Accelerator for Dense and Sparse Applications</h3>
-              <p class="publication__authors">Kalhan Koul, Olivia Hsu, Yuchen Mei, Sai Gautham Ravipati, Maxwell Strange, Jackson Melchert, Alex Carsello, Taeyoung Kong, <strong>Po-Han Chen</strong>, Huifeng Ke, Keyi Zhang, Qiaoyi Liu, Gedeon Nyengele, Zhouhua Xie, Akhilesh Balasingam, Jayashree Adivarahan, Ritvik Sharma, Christopher Torng, Joel Emer, Fredrik Kjolstad, Mark Horowitz, and Priyanka Raina</p>
-              <p class="publication__venue"><cite>IEEE Journal of Solid-State Circuits</cite>, 2025</p>
-              <div class="button-row">
-                <a class="text-button" href="https://doi.org/10.1109/JSSC.2025.3604724" target="_blank" rel="noreferrer">DOI <span aria-hidden="true">↗</span></a>
-                <a class="text-button" href="https://github.com/StanfordAHA/garnet" target="_blank" rel="noreferrer">Code <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-          </li>
+              <p class="publication-authors">Kalhan Koul, Olivia Hsu, Yuchen Mei, Sai Gautham Ravipati, Maxwell Strange, Jackson Melchert, Alex Carsello, Taeyoung Kong, <strong class="author-self">Po-Han Chen</strong>, Huifeng Ke, Keyi Zhang, Qiaoyi Liu, Gedeon Nyengele, Zhouhua Xie, Akhilesh Balasingam, Jayashree Adivarahan, Ritvik Sharma, Christopher Torng, Joel S. Emer, Fredrik Kjolstad, Mark Horowitz, and Priyanka Raina</p>
+              <p class="publication-venue"><cite>IEEE Journal of Solid-State Circuits (JSSC)</cite>, August 2025. <a class="publication-paper-link" href="https://doi.org/10.1109/JSSC.2025.3604724" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
 
-          <li class="publication">
-            <p class="publication__year">2025</p>
-            <article>
+            <li class="publication">
+              <h3>Opal: A 16nm Coarse-Grained Reconfigurable Array for Full Sparse ML Applications</h3>
+              <p class="publication-authors"><strong class="author-self">Po-Han Chen</strong>, Bo Wun Cheng, Michael Oduoza, Zhouhua Xie, Kalhan Koul, Sai Gautham Ravipati, Yuchen Mei, Rupert Lu, Alex Carsello, Mark Horowitz, and Priyanka Raina</p>
+              <p class="publication-venue"><cite>IEEE Custom Integrated Circuits Conference (CICC)</cite>, April 2025. <a class="publication-paper-link" href="https://doi.org/10.1109/CICC63670.2025.10983811" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
+
+            <li class="publication">
               <h3>Designing Programmable Accelerators for Sparse Tensor Algebra</h3>
-              <p class="publication__authors">Kalhan Koul, Zhouhua Xie, Maxwell Strange, Sai Gautham Ravipati, Bo Wun Cheng, Olivia Hsu, <strong>Po-Han Chen</strong>, Mark Horowitz, Fredrik Kjolstad, and Priyanka Raina</p>
-              <p class="publication__venue"><cite>IEEE Micro</cite>, vol. 45, no. 3, pp. 58–65, 2025</p>
-              <div class="button-row">
-                <a class="text-button" href="https://weiya711.github.io/publications/ieeemicro2025-submit-version.pdf" target="_blank" rel="noreferrer">Paper <span class="sr-only">PDF</span> <span aria-hidden="true">↗</span></a>
-                <a class="text-button" href="https://doi.org/10.1109/MM.2025.3556611" target="_blank" rel="noreferrer">DOI <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-          </li>
+              <p class="publication-authors">Kalhan Koul, Zhouhua Xie, Maxwell Strange, Sai Gautham Ravipati, Bo Wun Cheng, Olivia Hsu, <strong class="author-self">Po-Han Chen</strong>, Mark Horowitz, Fredrik Kjolstad, and Priyanka Raina</p>
+              <p class="publication-venue"><cite>IEEE Micro</cite>, March 2025. <a class="publication-paper-link" href="https://doi.org/10.1109/MM.2025.3556611" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
 
-          <li class="publication">
-            <p class="publication__year">2023</p>
-            <article>
+            <li class="publication-year"><h3>2024</h3></li>
+
+            <li class="publication">
+              <h3>Onyx: A Programmable Accelerator for Sparse Tensor Algebra</h3>
+              <p class="publication-authors">Kalhan Koul, Maxwell Strange, Jackson Melchert, Alex Carsello, Yuchen Mei, Olivia Hsu, Taeyoung Kong, <strong class="author-self">Po-Han Chen</strong>, Huifeng Ke, Keyi Zhang, Qiaoyi Liu, Gedeon Nyengele, Akhilesh Balasingam, Jayashree Adivarahan, Ritvik Sharma, Zhouhua Xie, Christopher Torng, Joel S. Emer, Fredrik Kjolstad, Mark Horowitz, and Priyanka Raina</p>
+              <p class="publication-venue"><cite>IEEE Hot Chips Symposium (Hot Chips)</cite>, August 2024. <a class="publication-paper-link" href="https://doi.org/10.1109/HCS61935.2024.10665150" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
+
+            <li class="publication">
+              <h3>Onyx: A 12nm 756 GOPS/W Coarse-Grained Reconfigurable Array for Accelerating Dense and Sparse Applications</h3>
+              <p class="publication-authors">Kalhan Koul, Maxwell Strange, Jackson Melchert, Alex Carsello, Yuchen Mei, Olivia Hsu, Taeyoung Kong, <strong class="author-self">Po-Han Chen</strong>, Huifeng Ke, Keyi Zhang, Qiaoyi Liu, Gedeon Nyengele, Akhilesh Balasingam, Jayashree Adivarahan, Ritvik Sharma, Zhouhua Xie, Christopher Torng, Joel S. Emer, Fredrik Kjolstad, Mark Horowitz, and Priyanka Raina</p>
+              <p class="publication-venue"><cite>IEEE Symposium on VLSI Technology and Circuits</cite>, June 2024. <a class="publication-paper-link" href="https://doi.org/10.1109/VLSITechnologyandCir46783.2024.10631383" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
+
+            <li class="publication-year"><h3>2023</h3></li>
+
+            <li class="publication">
               <h3>Amber: A 16-nm System-on-Chip With a Coarse-Grained Reconfigurable Array for Flexible Acceleration of Dense Linear Algebra</h3>
-              <p class="publication__authors">Kathleen Feng, Taeyoung Kong, Kalhan Koul, Jackson Melchert, Alex Carsello, Qiaoyi Liu, Gedeon Nyengele, Maxwell Strange, Keyi Zhang, Ankita Nayak, Jeff Setter, James Thomas, Kavya Sreedhar, <strong>Po-Han Chen</strong>, Nikhil Bhagdikar, Zach A. Myers, Brandon D’Agostino, Pranil Joshi, Stephen Richardson, Christopher Torng, Mark Horowitz, and Priyanka Raina</p>
-              <p class="publication__venue"><cite>IEEE Journal of Solid-State Circuits</cite>, 2023</p>
-              <div class="button-row">
-                <a class="text-button" href="https://doi.org/10.1109/JSSC.2023.3313116" target="_blank" rel="noreferrer">DOI <span aria-hidden="true">↗</span></a>
-                <a class="text-button" href="https://aha.stanford.edu/" target="_blank" rel="noreferrer">Project <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-          </li>
+              <p class="publication-authors">Kathleen Feng, Taeyoung Kong, Kalhan Koul, Jackson Melchert, Alex Carsello, Qiaoyi Liu, Gedeon Nyengele, Maxwell Strange, Keyi Zhang, Ankita Nayak, Jeff Setter, James Thomas, Kavya Sreedhar, <strong class="author-self">Po-Han Chen</strong>, Nikhil Bhagdikar, Zachary Myers, Brandon D’Agostino, Pranil Joshi, Stephen Richardson, Christopher Torng, Mark Horowitz, and Priyanka Raina</p>
+              <p class="publication-venue"><cite>IEEE Journal of Solid-State Circuits (JSSC)</cite>, September 2023. <a class="publication-paper-link" href="https://doi.org/10.1109/JSSC.2023.3313116" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
 
-          <li class="publication">
-            <p class="publication__year">2023</p>
-            <article>
-              <h3>AHA: An Agile Approach to the Design of Coarse-Grained Reconfigurable Accelerators and Compilers</h3>
-              <p class="publication__authors">Kalhan Koul, Leonard Truong, Caleb Donovick, Maxwell Strange, Jackson Melchert, Jeff Setter, Olivia Hsu, Keyi Zhang, Taeyoung Kong, Qiaoyi Liu, Ross Daly, Alex Carsello, <strong>Po-Han Chen</strong>, Yuchen Mei, Zhouhua Xie, Kathleen Feng, Gedeon Nyengele, Dillon Huff, Kavya Sreedhar, Huifeng Ke, Ankita Nayak, Rajsekhar Setaluri, Stephen Richardson, Christopher Torng, Pat Hanrahan, Clark Barrett, Mark Horowitz, Fredrik Kjolstad, and Priyanka Raina</p>
-              <p class="publication__venue"><cite>ACM Transactions on Embedded Computing Systems</cite>, vol. 22, no. 2, 2023</p>
-              <div class="button-row">
-                <a class="text-button" href="https://doi.org/10.1145/3534933" target="_blank" rel="noreferrer">DOI <span aria-hidden="true">↗</span></a>
-                <a class="text-button" href="https://github.com/StanfordAHA/aha" target="_blank" rel="noreferrer">Code <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-          </li>
-
-          <li class="publication">
-            <p class="publication__year">2023</p>
-            <article>
-              <h3>A 250-mW 5.4G-Rendered-Pixel/s Realistic Refocusing Processor for High-Performance Five-Camera Mobile Devices</h3>
-              <p class="publication__authors"><strong>Po-Han Chen</strong>, Shu-Wen Yang, and Chao-Tsung Huang</p>
-              <p class="publication__venue"><cite>IEEE Open Journal of the Solid-State Circuits Society</cite>, vol. 3, pp. 52–62, 2023</p>
-              <div class="button-row">
-                <a class="text-button" href="https://doi.org/10.1109/OJSSCS.2023.3244759" target="_blank" rel="noreferrer">DOI <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-          </li>
-
-          <li class="publication">
-            <p class="publication__year">2023</p>
-            <article>
+            <li class="publication">
               <h3>An Open-Source 4 × 8 Coarse-Grained Reconfigurable Array Using SkyWater 130 nm Technology and Agile Hardware Design Flow</h3>
-              <p class="publication__authors"><strong>Po-Han Chen</strong>, Charles Tsao, and Priyanka Raina</p>
-              <p class="publication__venue"><cite>IEEE International Symposium on Circuits and Systems (ISCAS)</cite>, 2023</p>
-              <div class="button-row">
-                <a class="text-button" href="https://doi.org/10.1109/ISCAS46773.2023.10182052" target="_blank" rel="noreferrer">DOI <span aria-hidden="true">↗</span></a>
-                <a class="text-button" href="https://github.com/pohantw/ee272b_CGRA" target="_blank" rel="noreferrer">Code <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-          </li>
+              <p class="publication-authors"><strong class="author-self">Po-Han Chen</strong>, Charles Tsao, and Priyanka Raina</p>
+              <p class="publication-venue"><cite>IEEE International Symposium on Circuits and Systems (ISCAS)</cite>, May 2023. <a class="publication-paper-link" href="https://doi.org/10.1109/ISCAS46773.2023.10182052" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
 
-          <li class="publication">
-            <p class="publication__year">2022</p>
-            <article>
+            <li class="publication">
+              <h3>A 250-mW 5.4G-Rendered-Pixel/s Realistic Refocusing Processor for High-Performance Five-Camera Mobile Devices</h3>
+              <p class="publication-authors"><strong class="author-self">Po-Han Chen</strong>, Shu-Wen Yang, and Chao-Tsung Huang</p>
+              <p class="publication-venue"><cite>IEEE Open Journal of the Solid-State Circuits Society (OJ-SSCS)</cite>, February 2023. <a class="publication-paper-link" href="https://doi.org/10.1109/OJSSCS.2023.3244759" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
+
+            <li class="publication-year"><h3>2022</h3></li>
+
+            <li class="publication">
+              <h3>Amber: Coarse-Grained Reconfigurable Array-Based SoC for Dense Linear Algebra Acceleration</h3>
+              <p class="publication-authors">Kathleen Feng, Alex Carsello, Taeyoung Kong, Kalhan Koul, Qiaoyi Liu, Jackson Melchert, Gedeon Nyengele, Maxwell Strange, Keyi Zhang, Ankita Nayak, Jeff Setter, James Thomas, Kavya Sreedhar, <strong class="author-self">Po-Han Chen</strong>, Nikhil Bhagdikar, Zachary Myers, Brandon D’Agostino, Pranil Joshi, Stephen Richardson, Rick Bahr, Christopher Torng, Mark Horowitz, and Priyanka Raina</p>
+              <p class="publication-venue"><cite>IEEE Hot Chips 34 Symposium</cite>, August 2022. <a class="publication-paper-link" href="https://doi.org/10.1109/HCS55958.2022.9895616" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
+
+            <li class="publication">
               <h3>mflowgen: A Modular Flow Generator and Ecosystem for Community-Driven Physical Design</h3>
-              <p class="publication__authors">Alex Carsello, James Thomas, Ankita Nayak, <strong>Po-Han Chen</strong>, Mark Horowitz, Priyanka Raina, and Christopher Torng</p>
-              <p class="publication__venue"><cite>Proceedings of the 59th ACM/IEEE Design Automation Conference (DAC)</cite>, pp. 1339–1342, 2022</p>
-              <div class="button-row">
-                <a class="text-button" href="https://doi.org/10.1145/3489517.3530633" target="_blank" rel="noreferrer">DOI <span aria-hidden="true">↗</span></a>
-                <a class="text-button" href="https://github.com/mflowgen/mflowgen" target="_blank" rel="noreferrer">Code <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-          </li>
+              <p class="publication-authors">Alex Carsello, James Thomas, Ankita Nayak, <strong class="author-self">Po-Han Chen</strong>, Mark Horowitz, Priyanka Raina, and Christopher Torng</p>
+              <p class="publication-venue"><cite>ACM/IEEE Design Automation Conference (DAC)</cite>, July 2022. <a class="publication-paper-link" href="https://doi.org/10.1145/3489517.3530633" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
 
-          <li class="publication">
-            <p class="publication__year">2021</p>
-            <article>
-              <h3>SAPIENS: A 64-kb RRAM-Based Non-Volatile Associative Memory for One-Shot Learning and Inference at the Edge</h3>
-              <p class="publication__authors">Haitong Li, Wei-Chen Chen, Akash Levy, Ching-Hua Wang, Hongjie Wang, <strong>Po-Han Chen</strong>, Weier Wan, Win-San Khwa, Harry Chuang, Y.-D. Chih, Meng-Fan Chang, H.-S. Philip Wong, and Priyanka Raina</p>
-              <p class="publication__venue"><cite>IEEE Transactions on Electron Devices</cite>, vol. 68, no. 12, pp. 6637–6643, 2021</p>
-              <div class="button-row">
-                <a class="text-button" href="https://doi.org/10.1109/TED.2021.3110464" target="_blank" rel="noreferrer">DOI <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-          </li>
-        </ol>
-      </section>
-    </main>
+            <li class="publication">
+              <h3>Amber: A 367 GOPS, 538 GOPS/W 16nm SoC With a Coarse-Grained Reconfigurable Array for Flexible Acceleration of Dense Linear Algebra</h3>
+              <p class="publication-authors">Alex Carsello, Kathleen Feng, Taeyoung Kong, Kalhan Koul, Qiaoyi Liu, Jackson Melchert, Gedeon Nyengele, Maxwell Strange, Keyi Zhang, Ankita Nayak, Jeff Setter, James Thomas, Kavya Sreedhar, <strong class="author-self">Po-Han Chen</strong>, Nikhil Bhagdikar, Zachary Myers, Brandon D’Agostino, Pranil Joshi, Stephen Richardson, Rick Bahr, Christopher Torng, Mark Horowitz, and Priyanka Raina</p>
+              <p class="publication-venue"><cite>IEEE Symposium on VLSI Technology and Circuits</cite>, June 2022. <a class="publication-paper-link" href="https://doi.org/10.1109/VLSITechnologyandCir46769.2022.9830509" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
 
+            <li class="publication">
+              <h3>AHA: An Agile Approach to the Design of Coarse-Grained Reconfigurable Accelerators and Compilers</h3>
+              <p class="publication-authors">Kalhan Koul, Jackson Melchert, Kavya Sreedhar, Leonard Truong, Gedeon Nyengele, Keyi Zhang, Qiaoyi Liu, Jeff Setter, <strong class="author-self">Po-Han Chen</strong>, Yuchen Mei, Maxwell Strange, Ross Daly, Caleb Donovick, Alex Carsello, Taeyoung Kong, Kathleen Feng, Dillon Huff, Ankita Nayak, Rajsekhar Setaluri, James Thomas, Nikhil Bhagdikar, David Durst, Zachary Myers, Nestan Tsiskaridze, Stephen Richardson, Rick Bahr, Kayvon Fatahalian, Pat Hanrahan, Clark Barrett, Mark Horowitz, Christopher Torng, Fredrik Kjolstad, and Priyanka Raina</p>
+              <p class="publication-venue"><cite>ACM Transactions on Embedded Computing Systems (TECS)</cite>, April 2022. <a class="publication-paper-link" href="https://doi.org/10.1145/3534933" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
+
+            <li class="publication-year"><h3>2021</h3></li>
+
+            <li class="publication">
+              <h3>SAPIENS: A 64-kbit RRAM-Based Non-Volatile Associative Memory for One-Shot Learning and Inference at the Edge</h3>
+              <p class="publication-authors">Haitong Li, Wei-Chen Chen, Akash Levy, Ching-Hua Wang, Hongjie Wang, <strong class="author-self">Po-Han Chen</strong>, Weier Wan, Win-San Khwa, Harry Chuang, Y.-D. Chih, Meng-Fan Chang, H.-S. Philip Wong, and Priyanka Raina</p>
+              <p class="publication-venue"><cite>IEEE Transactions on Electron Devices (T-ED)</cite>, September 2021. <a class="publication-paper-link" href="https://doi.org/10.1109/TED.2021.3110464" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
+
+            <li class="publication">
+              <h3>One-Shot Learning With Memory-Augmented Neural Networks Using a 64-kbit, 118 GOPS/W RRAM-Based Non-Volatile Associative Memory</h3>
+              <p class="publication-authors">Haitong Li, Wei-Chen Chen, Akash Levy, Ching-Hua Wang, Hongjie Wang, <strong class="author-self">Po-Han Chen</strong>, Weier Wan, H.-S. Philip Wong, and Priyanka Raina</p>
+              <p class="publication-venue"><cite>IEEE Symposium on VLSI Technology</cite>, June 2021. <a class="publication-paper-link" href="https://engineering.purdue.edu/~haitongl/assets/pdf/VLSI2021_hli_FINAL.pdf" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
+
+            <li class="publication-year"><h3>2019</h3></li>
+
+            <li class="publication">
+              <h3>A 250mW 5.4G-Novel-Pixel/s Photorealistic Refocusing Processor for Full-HD Five-Camera Applications</h3>
+              <p class="publication-authors"><strong class="author-self">Po-Han Chen</strong>, Shu-Wen Yang, Shih-Yao Huang, Li-De Chen, and Chao-Tsung Huang</p>
+              <p class="publication-venue"><cite>IEEE Symposium on VLSI Circuits</cite>, June 2019. <a class="publication-paper-link" href="https://doi.org/10.23919/VLSIT.2019.8776561" target="_blank" rel="noreferrer">[Paper]</a></p>
+            </li>
+          </ol>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer and page interactions -->
     <footer class="site-footer">
-      <div class="page-shell site-footer__inner">
-        <div>
-          <p class="site-footer__name">Po-Han Chen</p>
-          <p>Electrical Engineering · Stanford University</p>
-        </div>
-        <div class="site-footer__meta">
-          <a href="mailto:pohan@stanford.edu">pohan@stanford.edu</a>
-          <p>Last updated September 2026</p>
-        </div>
-      </div>
+      <div><p>© 2026 Po-Han Chen</p></div>
+      <a href="#about">Back to top ↑</a>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="assets/js/experience.js"></script>
+    <script src="assets/js/navigation.js"></script>
   </body>
 </html>

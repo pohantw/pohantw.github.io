@@ -1,0 +1,237 @@
+/* Responsive, accessibility preference, and print overrides. */
+
+@media (max-width: 1150px) {
+  .profile-photo {
+    width: 168px;
+    height: 168px;
+  }
+}
+
+@media (max-width: 960px) {
+  .site-nav a {
+    padding-inline: 0.65rem;
+    font-size: 0.86rem;
+  }
+
+  .site-nav a::after {
+    right: 0.65rem;
+    left: 0.65rem;
+  }
+
+  .profile-about {
+    grid-template-columns: 170px minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+
+}
+
+@media (max-width: 760px) {
+  :root {
+    --header-height: 58px;
+  }
+
+  .masthead__inner,
+  .site-layout,
+  .site-footer {
+    width: min(calc(100% - 2.25rem), var(--max-width));
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: var(--header-height);
+    right: 0;
+    left: 0;
+    display: none;
+    height: auto;
+    padding: 0.45rem 1.125rem 0.8rem;
+    border-bottom: 1px solid var(--rule-strong);
+    background: var(--paper);
+    box-shadow: 0 10px 24px rgba(31, 42, 47, 0.08);
+    flex-direction: column;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav a {
+    min-height: 45px;
+    padding: 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 0.82rem;
+  }
+
+  .site-nav a::after {
+    right: auto;
+    left: 0;
+    width: 32px;
+  }
+
+  .profile-card {
+    display: grid;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--rule);
+    align-items: center;
+    grid-template-columns: 104px minmax(0, 1fr);
+    gap: 0.65rem 1.4rem;
+  }
+
+  .profile-about {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .profile-photo {
+    width: 104px;
+    height: 104px;
+    grid-row: auto;
+    align-self: start;
+  }
+
+  .profile-links {
+    grid-column: 2;
+    margin: 24px 0 0;
+  }
+
+  .chip-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .chip-card {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.75fr) minmax(0, 1fr);
+  }
+
+  .chip-card figure {
+    height: 100%;
+    min-height: 300px;
+    border-right: 1px solid var(--rule);
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .site-layout,
+  .site-footer {
+    width: min(calc(100% - 1.6rem), var(--max-width));
+  }
+
+  .profile-card {
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .profile-photo {
+    width: 88px;
+    height: 88px;
+  }
+
+  .profile-links {
+    margin-top: 24px;
+  }
+
+  .profile-links a {
+    font-size: 0.72rem;
+  }
+
+  .hero-copy {
+    font-size: 1rem;
+  }
+
+  .chip-card {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+  }
+
+  .chip-card figure {
+    height: 260px;
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .chip-details,
+  .chip-details tbody {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .chip-details tr {
+    display: grid;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    grid-template-columns: minmax(0, 42%) minmax(0, 58%);
+  }
+
+  .chip-details th,
+  .chip-details td {
+    display: block;
+    width: auto;
+    min-width: 0;
+    padding-inline: 0.7rem;
+    overflow-wrap: anywhere;
+  }
+
+  .chip-role-tag,
+  .chip-publication-link {
+    white-space: normal;
+  }
+
+  .site-footer {
+    min-height: 100px;
+    padding-block: 1.6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  body {
+    padding-top: 0;
+    color: #000000;
+    font-size: 10pt;
+  }
+
+  .masthead,
+  .skip-link,
+  .site-footer {
+    display: none;
+  }
+
+  .site-layout {
+    display: block;
+    width: 100%;
+  }
+
+  .profile-card {
+    position: static;
+  }
+
+  .page-section,
+  .publication,
+  .chip-card {
+    break-inside: avoid;
+  }
+}

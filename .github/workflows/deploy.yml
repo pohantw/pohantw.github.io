@@ -32,7 +32,7 @@ jobs:
         shell: bash
         run: |
           mkdir _site
-          cp index.html styles.css script.js favicon.svg robots.txt sitemap.xml _site/
+          cp index.html robots.txt sitemap.xml _site/
           cp -R assets _site/assets
 
       - name: Upload GitHub Pages artifact
