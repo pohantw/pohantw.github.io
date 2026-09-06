@@ -241,7 +241,7 @@
 }
 
 .career-card__details[open] summary::after {
-  content: "âˆ’";
+  content: "\2212";
 }
 
 .career-card__details summary:focus-visible {
