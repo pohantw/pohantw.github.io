@@ -19,8 +19,8 @@
   }
 
   .profile-about {
-    grid-template-columns: 170px minmax(0, 1fr);
-    gap: 2.5rem;
+    grid-template-columns: 255px minmax(0, 1fr);
+    gap: 1.5rem;
   }
 
 }

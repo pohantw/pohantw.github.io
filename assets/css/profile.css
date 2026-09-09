@@ -2,8 +2,8 @@
 
 .profile-about {
   display: grid;
-  grid-template-columns: 190px minmax(0, 1fr);
-  gap: clamp(3rem, 5vw, 5.5rem);
+  grid-template-columns: 255px minmax(0, 1fr);
+  gap: 1.5rem;
 }
 
 .profile-card {
@@ -31,7 +31,7 @@
   min-height: 29px;
   align-items: center;
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   gap: 0.65rem;
 }
 
@@ -75,11 +75,15 @@
 }
 
 .profile-icon--location {
-  color: #e0523e;
+  color: #3b82f6;
 }
 
 .profile-icon--email {
-  color: #d97706;
+  color: #2563eb;
+}
+
+.profile-icon--resume {
+  color: #4f6fae;
 }
 
 .profile-links a > span:last-child,
@@ -117,6 +121,23 @@
 
 .hero-copy p:last-child {
   margin-bottom: 0;
+}
+
+.job-search-callout {
+  padding: 0.65rem 0.85rem;
+  border-left: 4px solid #4f6fae;
+  border-radius: 0 4px 4px 0;
+  color: #334b78;
+  background: #f2f5fa;
+  line-height: 1.5;
+}
+
+.job-search-callout strong {
+  font-weight: 700;
+}
+
+.person-name {
+  white-space: nowrap;
 }
 
 .section-heading {
