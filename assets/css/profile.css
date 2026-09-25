@@ -123,19 +123,6 @@
   margin-bottom: 0;
 }
 
-.job-search-callout {
-  padding: 0.65rem 0.85rem;
-  border-left: 4px solid #4f6fae;
-  border-radius: 0 4px 4px 0;
-  color: #334b78;
-  background: #f2f5fa;
-  line-height: 1.5;
-}
-
-.job-search-callout strong {
-  font-weight: 700;
-}
-
 .person-name {
   white-space: nowrap;
 }
